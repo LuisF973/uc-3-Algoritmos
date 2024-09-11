@@ -1,0 +1,112 @@
+// Atividade 1: Calculadora de Descontos
+// Contexto: João tem uma loja de roupas e deseja aplicar descontos diferentes com base no
+// valor da compra.
+// Questão: Se o valor da compra for maior que 100, aplique um desconto de 20%. Se for maior
+// que 50, aplique um desconto de 10%. Caso contrário, não aplique desconto.
+
+                                 // |
+                                 // |
+                                 // v
+                                 
+//let valorRoupa =5
+// if (valorRoupa>100){
+//     console.log('voce tem um desconto de 20%')
+// }
+ //  else if(valorRoupa>=50){
+//     console.log('voce tem um desconto de 10%')
+//  }
+//  else{
+//     console.log('voce nao tem desconto')
+//  }                              
+
+// Atividade 2: Classificação de Idades
+// Contexto: Maria quer classificar seus alunos em grupos etários.
+// Questão: Se a idade for menor que 12, classifique como "Criança". Se for entre 12 e 18,
+// classifique como "Adolescente". Se for maior que 18, classifique como "Adulto".
+
+                                      // |
+                                      // |
+                                      // v
+
+// let idade = 12
+ 
+//    if (idade=12){
+//     console.log('criança')
+//    }
+//    else if(idade<=18){
+//     console.log('adolecente')
+//    }
+//    else {
+//     console.log('adulto')
+//    }
+
+// Atividade 3: Verificação de Tempo
+// Contexto: Ana precisa verificar o estado do tempo com base na temperatura.
+// Questão: Se a temperatura for menor que 15°C, imprimir "Frio". Se for entre 15°C e 30°C,
+// imprimir "Agradável". Se for maior que 30°C, imprimir "Quente".
+
+                                   // |
+                                   // |
+                                   // v
+
+//    let temperatura = 31
+
+//    if (temperatura<15){
+//     console.log('frio')
+//    }
+
+//    else if (temperatura<=31){
+//     console.log('agradavel')
+//    }
+
+//    else {
+//     console.log('quente')
+//    }
+
+
+// Atividade 4: Classificação de Notas
+// Contexto: Pedro quer classificar as notas de seus alunos.
+// Questão: Se a nota for maior que 90, classifique como "A". Se for entre 70 e 90, classifique
+// como "B". Se for menor que 70, classifique como "C".
+
+                                        // |
+                                        // |
+                                        // v
+
+//    let nota = 91
+
+//    if(nota>90){
+//     console.log('A')
+//    }
+
+//    else if(nota>70){
+//     console.log('b')
+//    }
+
+//    else{
+//     console.log('c')
+//    }
+
+// Atividade 5: Controle de Velocidade
+// Contexto: Carla precisa verificar a velocidade dos carros em uma rodovia.
+// Questão: Se a velocidade for maior que 120 km/h, imprimir "Muito rápido". Se for entre 80 e
+// 120 km/h, imprimir "Velocidade adequada". Se for menor que 80 km/h, imprimir "Muito lento".
+
+                                        // |
+                                        // |
+                                        // v
+
+//    let velocidade = 121
+
+//    if (velocidade>120){
+//     console.log('muito rapido')
+//    }
+
+//    else if(velocidade<=120){
+//     console.log('velocidade adequada')
+//    }
+
+//    else{
+//     console.log('muito lento')
+//    }
+

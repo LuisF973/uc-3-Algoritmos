@@ -1,0 +1,164 @@
+//Atividade 1: Verificação de Idade
+//Contexto: João é o organizador de uma festa e precisa verificar se as pessoas que entram têm
+//18 anos ou mais.
+//Questão: Crie uma função que, dada uma lista de idades, use um loop for para verificar se
+//todas as pessoas têm 18 anos ou mais. Se sim, retorne "Todos podem entrar". Se não, retorne
+//"Alguém não pode entrar".
+
+                                           // |
+                                           // |
+                                           // v
+
+// function verificarIdade(listaDeIdade) {
+//    for ( let i=0; i <listaDeIdade.length; i++){
+//        if (listaDeIdade[i] < 18){
+//             return'alguem nao pode entrar'
+//        }
+//       else{
+//           return'todos podem entrar'
+// }}}
+
+// const idade= [15,22,19,20,30,28,26];
+// console.log(verificarIdade(idade));
+
+// Atividade 2: Contador de Números Pares
+// Contexto: Maria quer contar quantos números pares existem entre 1 e 50.
+// Questão: Crie uma função que use um loop while para contar quantos números pares
+// existem entre 1 e 50. Retorne esse número
+
+                                           // |
+                                           // |
+                                           // v
+                                        
+// function numerosPares() {
+//    let i =1
+//     let con =0
+//     while(i<=50){
+//        if(i % 2==0){
+//        con = con+1    
+//        } 
+//         i++
+//     }
+//     return con
+// }  
+//   console.log(numerosPares())
+
+// Atividade 3: Classificação de Cores
+// Contexto: Ana precisa categorizar cores de acordo com sua intensidade.
+// Questão: Use switch case para classificar uma cor baseada em um número de 1 a 3. Se 1,
+// classifique como "Cor Clara". Se 2, "Cor Média". Se 3, "Cor Escura". Qualquer outro número
+// deve retornar "Cor Desconhecida".
+
+                                           // |
+                                           // |
+                                           // v
+
+// let classificarCor
+// classificarCor=4
+// switch (classificarCor){
+//       case 1:
+//           console.log('cor clara')
+//          break;
+//       case 2:
+//           console.log('cor media')
+//           break;
+//       case 3:
+//           console.log('cor escura')
+//           break;
+//       default:
+//           console.log('cor desconhecida')
+// }
+
+// Atividade 4: Validação de Senha
+// Contexto: Carla precisa validar a segurança de senhas inseridas por usuários.
+// Questão: Crie uma função que use switch case para validar uma senha. Se a senha tiver
+// menos de 8 caracteres, retorne "Senha Fraca". Se tiver entre 8 e 12 caracteres, retorne "Senha
+// Média". Se tiver mais de 12, retorne "Senha Forte".
+
+                                           // |
+                                           // |
+                                           // v
+
+// function ValidarSenha(Senha) {
+//       const comprimento = Senha.length;
+//       switch (true) {
+//             case (comprimento<8):
+//                   return 'senha fraca'
+//             case (comprimento>=8 && comprimento<=12):
+//                   return 'senha mmédia'      
+//             case (comprimento>12):
+//                   return 'senha forte'
+            
+//       }
+      
+// }
+// console.log(ValidarSenha('abc123'))
+// console.log(ValidarSenha('abcde123'))
+// console.log(ValidarSenha('abcdefghijk1234'))
+
+// Atividade 5: Classificação de Notas
+// Contexto: Isabela quer classificar notas escolares de acordo com a pontuação.
+// Questão: Use switch case para classificar uma nota de 0 a 100. Se a nota for maior que 90,
+// classifique como "A". Se entre 80 e 89, "B". Se entre 70 e 79, "C". Se entre 60 e 69, "D". Se
+// menor que 60, "F"
+
+                                           // |
+                                           // |
+                                           // v
+
+// let ClassificarNota=90
+// switch (ClassificarNota) {
+//       case (ClassificarNota=90):
+//             console.log('Nota A')
+//             break; 
+//       case (ClassificarNota>=80 && ClassificarNota<=89):
+//             console.log('Nota B' )
+//             break;      
+//       case (ClassificarNota>=70 && ClassificarNota<=79):
+//             console.log('Nota C') 
+//             break;
+//       case (ClassificarNota>=60 && ClassificarNota<=79):
+//             console.log('Nota D')
+//             break; 
+//       case (ClassificarNota<60):
+//             console.log('Nota F') 
+//             break;            
+// }
+
+// Atividade 6: FizzBuzz Avançado
+// Contexto: Gabriel quer criar uma versão avançada do FizzBuzz.
+// Questão: Crie uma função que use um loop for para percorrer de 1 a 100. Se o número for
+// divisível por 2, 3 e 5, imprima "FizzBuzzBoom". Se for divisível por 2 e 3, imprima "FizzBuzz".
+// Se for divisível por 3 e 5, imprima "BuzzBoom". Se for divisível por 2 e 5, imprima "FizzBoom".
+// Se for divisível apenas por 2, 3, ou 5, imprima "Fizz", "Buzz", ou "Boom", respectivamente.
+// Caso contrário, imprima o número.
+
+                                           // |
+                                           // |
+                                           // v
+
+// function exibirFizzBuzz() {
+      //       for (let i = 1; i <= 100; i++) {
+      //           if (i % 2 == 0 && i % 3 === 0 && i % 5 === 0) {
+      //              console.log(i, "FizzBuzzBoom") ;
+      //           }else if(i % 2 == 0 && i % 3 == 0){
+      //              console.log(i, "FizzBuzz");
+      //           }else if(i % 3 == 0 && i & 5 == 0){
+      //              console.log(i, "BuzzBoom");
+      //           }else if(i % 2 == 0 && i % 5 == 0){
+      //              console.log(i, "FizzBoom");
+      //           }else if(i % 2 == 0){
+      //              console.log(i, "fizz") 
+      //           }else if(i % 3 == 0){
+      //              console.log(i, "Buzz") 
+      //           }else if(i % 5 == 0){
+      //              console.log(i, "Boom") 
+      //           }else{
+      //               console.log(i)
+      //           }
+                
+      //       }
+      //   }
+        
+      //   exibirFizzBuzz();
+//}
