@@ -1,0 +1,199 @@
+// //1. Manipulação de Arrays para Ordenação
+// ● Dado o array let numeros = [34, 7, 23, 32, 5, 62], faça as seguintes
+// tarefas:
+// ○ Adicione os números 9 e 12 ao final do array.
+// ○ Adicione 1 ao início do array.
+// ○ Ordene o array de forma crescente.
+// ○ Inverta a ordem do array.
+// ● No final, imprima o array resultante.
+                  // |
+                  // |
+                  // V
+
+// let numeros = [34, 7, 23, 32, 5, 62]
+// numeros.push(9,8)
+// numeros.unshift(1)
+// numeros.sort((a,b)=>a-b);
+// numeros.reverse();
+
+// console.log (numeros)
+
+//2. Concatenando e Formatando Strings
+// ● Considere duas variáveis, let saudacao = "Olá" e let nome = "Mundo". Faça
+// as seguintes tarefas:
+// ○ Concatene essas duas variáveis em uma única string.
+// ○ Transforme a string resultante para que todas as letras fiquem em maiúsculas.
+// ○ Depois, extraia apenas a palavra "Mundo" da string concatenada.
+// ● Por fim, imprima o resultado da extração.
+
+                                 // |
+                                 // |
+                                 // V
+
+ // let saudacao = "Olá";
+// let nome = "Mundo";
+// let complemeto = saudacao.concat(nome)
+// let parte = complemeto.slice(0, 3);
+// console.log(parte.toUpperCase())
+
+
+// 3. Cálculo de Soma e Filtro de Números
+// ● Dado o array de números let valores = [10, 25, 30, 45, 50, 60], execute
+// as seguintes etapas:
+// ○ Filtre apenas os números maiores que 30.
+// ○ Some todos os números filtrados.
+// ○ Verifique se o valor somado é um número (utilize isNaN()).
+// ● Mostre no console o valor filtrado, somado e a confirmação de que é um número
+
+                                 // |
+                                 // |
+                                 // V
+
+// let valores = [10, 25, 30, 45, 50, 60]
+// let numero = valores.filter(function (valores) {
+//     return valores >30
+// })
+// let soma = numero.reduce(function(acumulador, numero) {
+// return acumulador + numero;
+// }, 0);
+
+// console.log(numero,soma)
+
+// 4. Usando map() e reduce() para Dobrar e Somar Valores
+// ● Dado o array let numeros = [1, 2, 3, 4, 5], faça o seguinte:
+// ○ Use map() para criar um novo array que contenha o dobro de cada valor.
+// ○ Reduza o novo array para obter a soma de todos os seus elementos.
+// ● Imprima o array dobrado e o resultado da soma.
+
+                             // |
+                             // |
+                             // V
+
+// let numeros = [1, 2, 3, 4, 5]
+// let dobrados = numeros.map(function(numero) {
+// return numero * 2;
+// });
+// let soma = numeros.reduce(function(acumulador, numero) {
+// return acumulador + numero;
+// }, 0);
+
+// console.log(dobrados,soma)   
+
+
+// 5. Contando Caracteres e Dividindo Frases
+// ● Dada a string let frase = "A programação é divertida e desafiadora.",
+// execute as seguintes tarefas:
+// ○ Conte quantos caracteres essa frase possui (incluindo espaços).
+// ○ Divida a frase em palavras separadas.
+// ○ Converta todas as palavras para letras maiúsculas.
+// ○ Junte essas palavras em uma nova string, separadas por hífens (-).
+// ● Imprima a frase resultante.
+
+                             // |
+                             // |
+                             // V
+
+// let frase = "A programação é divertida e desafiadora."
+// console.log(frase.length)
+// let separado=frase.split(' ')
+// console.log(separado)
+// let maiusculo = separado.map(separado=> separado.toUpperCase())
+// console.log(maiusculo)
+// let hifen = maiusculo.join("-")
+// console.log(hifen)
+
+
+// 6. Manipulando Arrays com splice() e slice()
+// ● Dado o array let frutas = ["Maçã", "Banana", "Laranja", "Manga",
+// "Uva"]:
+// ○ Remova "Laranja" do array e substitua por "Abacaxi".
+// ○ Extraia apenas as primeiras três frutas do array usando slice().
+// ○ Adicione "Melancia" ao final do novo array extraído.
+// ● Imprima o array modificado e o array extraído.
+
+                    // |
+                    // |
+                    // V
+
+// let frutas = ["Maçã", "Banana", "Laranja", "Manga","Uva"]
+// frutas.splice(2,1, "Abacaxi")
+
+// let extrair = frutas.slice(0,3)
+// extrair.push("Melancia")
+// console.log(frutas)
+// console.log(extrair)
+
+// 7. Verificação de Índices e Modificação de Valores
+// ● Considere o array let nomes = ["Ana", "Carlos", "João", "Maria"]:
+// ○ Descubra o índice de "Carlos" no array.
+// ○ Remova "João" usando splice() e substitua por "José".
+// ○ Adicione "Fernanda" ao início e "Rafael" ao final do array.
+// ● Imprima o índice de "Carlos" e o array resultante.
+
+                           // |
+                           // |
+                           // V
+
+// let nomes = ["Ana", "Carlos", "João", "Maria"]
+// let indice = nomes.indexOf("Carlos")
+// nomes.splice(1,1)
+// nomes.push("Rafael")
+// nomes.unshift("Fernanda")
+// console.log(nomes,indice)
+
+
+// 8. Transformação de Arrays com map(), filter() e reduce()
+// ● Dado o array de preços let precos = [15.5, 10.0, 20.75, 30.0, 8.0]:
+// ○ Use map() para adicionar 10% a cada preço.
+// ○ Filtre os preços que sejam maiores que 20.
+// ○ Some todos os preços filtrados.
+// ● Mostre o array com os preços aumentados, o array filtrado, e o total somado.
+
+                                // |
+                                // |
+                                // V
+
+ // let precos = [15.5, 10.0, 20.75, 30.0, 8.0];
+
+// let dezporcento = precos.map(function(num){
+//     return num * 1.1;
+// })
+
+//  console.log(dezporcento)
+
+// let filtro = dezporcento.filter(function(num){
+//     return num > 20;
+// })
+
+// console.log(filtro);
+
+// let soma = filtro.reduce(function (acumulador, numero){
+//     return acumulador + numero
+// });
+
+// console.log(soma)
+
+// 10. Condicional para Calcular Média
+// ● Dado o array let notas = [7.5, 8.0, 6.5, 9.0, 7.0]:
+// ○ Calcule a média das notas usando reduce().
+// ○ Verifique se a média é maior ou igual a 7 para decidir se o aluno foi aprovado ou
+// reprovado.
+// ● Imprima a média e o resultado ("Aprovado" ou "Reprovado").
+
+                            // |
+                            // |
+                            // V
+
+ //let notas = [7.5, 8.0, 6.5, 9.0, 7.0]
+// let media = notas.reduce(function (acumulador,numero){
+//     return acumulador + numero;
+// })
+// let resultado = media / notas.length
+// console.log(resultado);
+
+// if (resultado >= 7){
+//     console.log("Aprovado");
+// }
+// else{
+//     console.log("Reprovado");
+// }
