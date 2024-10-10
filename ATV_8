@@ -169,6 +169,95 @@
 // });
 // console.log(dobrados);                            
 
+// 14. Filtrar Números Maiores que 50 em um Array Aleatório
+// ● Gere um array com 10 números aleatórios entre 1 e 100. Filtre os números maiores que
+// 50 e imprima o array filtrado.
+                                      // |
+                                      // |
+                                      // V
+
+// let numeros = [9, 83, 48, 81, 96, 42, 64, 95, 32, 82]
+// let filtrar = numeros.filter(function (numero) {
+//     return numero > 50
+// })
+// console.log(filtrar)
+
+// 15. Somar Números Aleatórios e Verificar Tipo
+// ● Gere um array com 5 números aleatórios entre 1 e 100, some todos os números e
+// verifique se o resultado é um número usando isNaN(). Imprima o valor somado e o
+// resultado da verificação.
+                                // |
+                                // |
+                                // V
+
+// let numeros = [26, 99, 87, 9, 54]
+// let soma = numeros.reduce(function (acumulador,numero) {
+//         return acumulador + numero;
+// }, 0);
+// console.log(soma, isNaN(numeros)) 
 
 
-óla mundo
+// 16. Substituir Palavras em uma String
+// ● Dada a string let frase = "O clima está ensolarado", substitua a palavra
+// "ensolarado" por "chuvoso" e imprima a string resultante.
+
+                                      // |
+                                      // |
+                                      // V
+
+// let frase = "O clima está ensolarado"
+// let novaFrase= frase.replace("ensolarado", "chuvoso")
+// console.log(novaFrase)
+
+
+// 17. Ordenar um Array de Números
+// ● Dado o array let numeros = [40, 10, 30, 20, 50], ordene os números de
+// forma crescente e imprima o array ordenado.
+                                   // |
+                                   // |
+                                   // V
+
+// let numeros = [40, 10, 30, 20, 50]
+// numeros.sort((a,b) => a - b);
+// console.log(numeros)
+
+// 19. Arredondar um Número
+// ● Dada a string let numeroStr = "45.67", converta a string em número inteiro,
+// arredonde para baixo e depois para cima usando Math.floor() e Math.ceil().
+// Imprima os resultados.
+
+                                     // |
+                                     // |
+                                     // V
+
+// let numeroStr = "45.67"
+// let num = parseFloat(numeroStr)
+//   console.log(Math.floor(num))
+// console.log(Math.ceil(num)) 
+
+// 20. Contar Caracteres Específicos em uma String
+// ● Dada a string let palavra = "programador", conte quantas vezes a letra "a"
+// aparece na palavra. Imprima o resultado.
+                                        // |
+                                        // |
+                                        // V
+
+//let palavra = "programador";
+// let letra = 'a'
+// let contador = 0;
+
+// let array = palavra.split('');
+
+// array.forEach(char =>{
+//     if (char === letra){
+//         contador++;
+//     }
+// })
+// console.log(`A letra "${letra}" aparece ${contador} vezes. `);   
+
+// let numeros = [15, 20, 25, 30]
+// let maioresquedez = numeros.every(num => num > 10)
+// console.log(maioresquedez)
+
+// let palavra = ["casa","CASA"]
+// let todasiguais = palavra.every(palavra => palavra.toLowerCase()=== palavra[0].toLowerCase());
